@@ -1,0 +1,94 @@
+[{
+	"id": 1,
+	"type": "CONFERENCE",
+	"title": "Diseño de mapas en Google Map Maker",
+	"date": "13/01/2014 14:00",
+	"location": "Sala 1",
+	"description": "Descripcion de la conferencia, no mas dee 5 lineas",
+	"image": "googlemapmaker.png",
+	"author": "Sergey Brin"
+},{
+	"id": 2,
+	"type": "CONFERENCE",
+	"title": "Optimización de sitios usando SEO",
+	"date": "12/01/2014 16:00",
+	"location": "Sala 1",
+	"description": "Descripcion de la conferencia, no mas dee 5 lineas",
+	"image": "dotrowseo.png",
+	"author":  "Sergio Ceron"
+},{
+	"id": 3,
+	"type": "STAND",
+	"title": "Google Maps",
+	"startDate": "12/01/2014 13:00",
+	"endDate": "14/01/2014 13:00",
+	"location": "Stand 1",
+	"description": "Descripcion del stand",
+	"image": "imagestand1.png",
+	"organization": "Google Inc."
+},{
+	"id": 4,
+	"type": "STAND",
+	"title": "Amazon AWS",
+	"startDate": "11/01/2014 11:00",
+	"endDate": "13/01/2014 17:00",
+	"location": "Stand 2",
+	"description": "Descripcion del stand",
+	"image": "imagestand2.png",
+	"organization": "Amazon.com Inc."
+},{
+	"id": 5,
+	"type": "CONFERENCE",
+	"title": "Introducción a YUI javascript",
+	"date": "13/01/2014 13:30",
+	"location": "Sala 2",
+	"description": "Descripcion de la conferencia, no mas de 5 lineas",
+	"image": "yahoooyui.png",
+	"author": "Kara Swisher"
+},{
+	"id": 6,
+	"type": "CONFERENCE",
+	"title": "Desarrollo avanzado de aplicaciones moviles",
+	"date": "16/01/2014 15:00",
+	"location": "Sala 3",
+	"description": "Descripcion de la conferencia, no mas de 5 lineas",
+	"image": "sencha.png",
+	"author": "Juan Perez Hernandez"
+},{
+	"id": 7,
+	"type": "CONFERENCE",
+	"title": "Posicionamiento de sitios web",
+	"date": "13/01/2014 10:00",
+	"location": "Sala 5",
+	"description": "Descripcion de la conferencia, no mas dee 5 lineas",
+	"image": "googleweb.png",
+	"author": "Larry Page"
+},{
+	"id": 8,
+	"type": "CONFERENCE",
+	"title": "Introduccion a Metasploit ofensivo",
+	"date": "13/01/2014 13:00",
+	"location": "Sala 1",
+	"description": "Descripcion de la conferencia, no mas dee 5 lineas",
+	"image": "dotrowhacking.png",
+	"author": "Sergio Ceron"
+},{
+	"id": 9,
+	"type": "CONFERENCE",
+	"title": "Cómputo Elástico en la Nube",
+	"date": "13/01/2014 17:00",
+	"location": "Sala 5",
+	"description": "Descripcion de la conferencia, no mas dee 5 lineas",
+	"image": "amazonec2.png",
+	"author": "Jeffrey Preston"
+},{
+	"id": 10,
+	"type": "CONFERENCE",
+	"title": "Virtualización de aplicaciones en la nube",
+	"date": "13/01/2014 10:30",
+	"location": "Sala 1",
+	"description": "Descripcion de la conferencia, no mas dee 5 lineas",
+	"image": "amazonvirtual.png",
+	"author": "Jeffrey Preston"
+}
+]

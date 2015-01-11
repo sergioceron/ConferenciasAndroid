@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/linear"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingTop="?android:attr/actionBarSize" android:background="@drawable/fondo">
+
+    <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content" android:background="#0084FF">
+             <TextView
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="COPARMEX"
+                          android:id="@+id/sponsorName" android:textColor="#FFFFFF"
+                          android:layout_marginTop="15dp" android:textSize="24sp"
+                          android:layout_marginBottom="15dp" android:layout_marginLeft="5dp"
+                          android:gravity="center_horizontal"/>
+         </LinearLayout>
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="120sp"
+            android:id="@+id/sponsorImage"
+            android:scaleType="fitCenter" android:layout_marginBottom="10sp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4CA5FF" android:textSize="18sp"
+            android:id="@+id/sponsorUrlLbl"
+            android:text="URL"
+            android:autoText="false"
+            android:paddingLeft="10sp" android:paddingTop="5sp" android:paddingRight="10sp"
+            android:paddingBottom="5sp"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="3sp"
+            android:id="@+id/border2" android:background="#4CA5FF" android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="http://www.google.com"
+            android:id="@+id/sponsorUrl" android:textColor="#2f2f2f" android:textSize="17sp"
+            android:padding="10sp"
+            android:autoLink="web"/>
+</LinearLayout>

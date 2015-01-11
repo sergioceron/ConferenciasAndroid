@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="?android:attr/actionBarSize">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/fondo">
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardsView"
+                android:choiceMode="singleChoice"
+                android:textFilterEnabled="false" android:layout_weight="1"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escanear Contacto"
+                android:id="@+id/btnScan" android:singleLine="false" android:textAlignment="center"
+                android:background="@drawable/button_scancontact" android:textColor="#FFF"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/progressBar"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:gravity="center" android:background="#cc000000"
+            android:clickable="true">
+        <ProgressBar
+                android:id="@+id/pbProgess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" android:clickable="true"/>
+    </LinearLayout>
+</RelativeLayout>

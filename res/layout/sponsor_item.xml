@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:columnCount="10" android:rowCount="3"
+              android:minHeight="66sp"
+              android:orientation="vertical">
+    <TextView
+            android:id="@+id/separator"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Separador" android:visibility="gone" android:background="#CC000000" android:textColor="#FFF"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:layout_width="100sp"
+                android:layout_height="75sp"
+                android:id="@+id/sponsorThumb" android:src="@drawable/user_default" android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp" android:layout_marginBottom="5sp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_column="2"
+                android:layout_weight="1" android:layout_marginLeft="5dp">
+            <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:paddingLeft="5dp" android:text="name" android:textColor="#000"
+
+                    android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:ellipsize="end"
+                    android:scrollHorizontally="true" android:singleLine="false" android:maxLines="1"
+                    >
+            </TextView>
+            <TextView
+                    android:id="@+id/url"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:paddingLeft="5dp" android:text="url"
+                    android:gravity="top" android:layout_gravity="fill_horizontal"
+                    android:textColor="#000"
+                    >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

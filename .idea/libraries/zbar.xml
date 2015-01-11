@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="zbar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/zbar.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/armeabi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/mapviewlib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://$PROJECT_DIR$/libs/armeabi.jar!/" recursive="false" />
+  </library>
+</component>

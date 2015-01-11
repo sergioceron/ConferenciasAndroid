@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="Conferencias">
+    <output-path>$PROJECT_DIR$/out/artifacts/Conferencias</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyAlias" value="longterm.licence.dotrow.com" />
+        <option name="keyPassword" value="U3hjZXJvbjM0NQ==" />
+        <option name="keyStorePassword" value="U3hjZXJvbjM0NQ==" />
+        <option name="keyStoreUrl" value="file://$APPLICATION_HOME_DIR$/jre/jre/bin/.keystore_android" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="Conferencias.apk">
+      <element id="android-final-package" facet="Conferencias/android/Android" />
+    </root>
+  </artifact>
+</component>

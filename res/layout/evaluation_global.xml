@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingTop="?android:attr/actionBarSize" android:paddingLeft="10dp" android:paddingRight="10dp">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Queremos saber tu opinión, califica los siguientes rubros:"
+                    android:id="@+id/textView7" android:layout_marginBottom="10dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo calificas el Día del Empresario Coparmex?"
+                    android:id="@+id/textView8" android:paddingBottom="5dp"/>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingEvent" style="@style/customRatingBar"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Todo el evento"
+                        android:id="@+id/textView" android:paddingTop="10dp" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingConferencistas" style="@style/customRatingBar"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conferencistas"
+                        android:id="@+id/textView2" android:layout_marginLeft="10dp" android:paddingTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingNetworking" style="@style/customRatingBar"
+                        android:focusableInTouchMode="false"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Actividades de Networking"
+                        android:id="@+id/textView3" android:layout_marginLeft="10dp" android:paddingTop="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingOrganization" style="@style/customRatingBar"
+                        android:focusableInTouchMode="false"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Organización del Evento"
+                        android:id="@+id/textView4" android:layout_marginLeft="10dp" android:paddingTop="10dp"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cómo te enteraste del evento? "
+                    android:id="@+id/textView5" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"/>
+            <RadioGroup android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:id="@+id/options">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Página Web"
+                        android:id="@+id/radioButton"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Redes Sociales"
+                        android:id="@+id/radioButton2"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mail"
+                        android:id="@+id/radioButton3"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Periódico"
+                        android:id="@+id/radioButton4"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Radio"
+                        android:id="@+id/radioButton5"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton6" android:text="Recomendación"/>
+            </RadioGroup>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¿Qué mejorarías del Día del Empresario? "
+                    android:id="@+id/textView6" android:layout_marginTop="10dp" android:layout_marginBottom="5dp"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/comment" android:maxLength="200"/>
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enviar Evaluación"
+                    android:id="@+id/btnSend" android:singleLine="false" android:textAlignment="center"
+                    android:background="@drawable/button_scancontact" android:textColor="#FFF"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

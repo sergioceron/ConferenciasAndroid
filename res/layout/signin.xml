@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" android:baselineAligned="false" android:background="#ffffff">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="140dp"
+            android:layout_marginRight="35dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingresa el código de tu gafete:"
+                android:id="@+id/lblId" android:textColor="#777" android:textSize="13dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/id" android:layout_marginTop="10dp" android:background="@drawable/textview_border"
+                android:autoText="true" android:textColor="#000" android:gravity="center"/>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="15dp">
+            <Button
+                    android:layout_width="115dp"
+                    android:layout_height="36dp"
+                    android:text="Escanear"
+                    android:id="@+id/btnScan" android:background="@drawable/button_scan"
+                    android:textSize="17dp" android:layout_marginRight="16dp"/>
+            <Button
+                    android:layout_width="115dp"
+                    android:layout_height="36dp"
+                    android:text="Entrar"
+                    android:id="@+id/btnEnter" android:background="@drawable/button_enter" android:textSize="17dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/progressBar"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:gravity="center" android:background="#cc000000"
+            android:clickable="true">
+        <ProgressBar
+                android:id="@+id/pbProgess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" android:clickable="true"/>
+    </LinearLayout>
+</RelativeLayout >

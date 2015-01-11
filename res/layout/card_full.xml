@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/linear"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:paddingTop="?android:attr/actionBarSize" android:background="@drawable/fondo">
+
+    <LinearLayout
+                 android:orientation="vertical"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content" android:background="#0084FF" android:layout_marginBottom="50dp">
+             <TextView
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:text="Sergio Ceron Figueroa"
+                          android:id="@+id/cardName" android:textColor="#FFFFFF"
+                          android:textSize="24sp" android:layout_marginTop="15dp"
+                          android:layout_marginBottom="15dp" android:layout_marginLeft="5dp"
+                          android:gravity="center_horizontal"/>
+         </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COPARMEX"
+            android:id="@+id/cardOrganization" android:textColor="#000" android:textSize="17sp"
+            android:padding="5sp" android:layout_marginLeft="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gerente General de Servicios"
+            android:id="@+id/cardJob" android:textColor="#000" android:textSize="17sp"
+            android:padding="5sp" android:layout_marginLeft="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email.com"
+            android:id="@+id/cardEmail" android:textColor="#000" android:textSize="17sp"
+            android:padding="5sp" android:layout_marginLeft="20dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="55-2598554"
+            android:id="@+id/cardPhone" android:textColor="#000" android:textSize="17sp"
+            android:padding="5sp" android:layout_marginLeft="20dp"/>
+</LinearLayout>

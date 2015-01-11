@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.dotrow.diaempresario"
+          android:versionCode="3"
+          android:versionName="1.01">
+    <uses-sdk android:minSdkVersion="13"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher" android:theme="@style/DotRow">
+        <activity
+                android:name=".Boot"
+                android:label="@string/app_name"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dotrow.diaempresario.MainActivity"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop">
+        </activity>
+        <activity
+                android:name="com.dotrow.diaempresario.events.EventDetailActivity"
+                android:label="Programa"
+                android:parentActivityName=".MainActivity" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity" />
+        </activity>
+        <activity
+                android:name="com.dotrow.diaempresario.cards.CardDetailActivity"
+                android:label="Networking"
+                android:parentActivityName=".MainActivity" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity" />
+        </activity>
+        <activity
+                android:name="com.dotrow.diaempresario.sponsors.SponsorDetailActivity"
+                android:label="Atras"
+                android:parentActivityName=".MainActivity" >
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value=".MainActivity" />
+        </activity>
+        <activity android:name="com.dotrow.diaempresario.camera.CameraActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.dotrow.diaempresario.SigninActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.dotrow.diaempresario.evaluation.GlobalEvaluation" android:screenOrientation="portrait" />
+        <receiver android:enabled="true"
+                  android:name=".OnBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dotrow.diaempresario.evaluation.EvaluationReceiver"></receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+</manifest>

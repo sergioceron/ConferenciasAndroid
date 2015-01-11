@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="DotRow"
+           parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/WhiteActionBar</item>
+        <item name="android:actionBarTabStyle">@style/WhiteActionTabs</item>
+        <item name="android:actionBarTabBarStyle">@style/customTabBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_dark</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="WhiteActionBar"
+           parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#aa000000</item>
+        <item name="android:titleTextStyle">@style/WhiteTextStyle</item>
+    </style>
+
+    <!-- ActionBar tabs styles -->
+    <style name="WhiteActionTabs"
+           parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <!-- tab indicator -->
+        <item name="android:background">#CCDFDFDF</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:showDividers">none</item>
+    </style>
+
+    <style name="customTabBar" parent="@android:style/Widget.Holo.Light.ActionBar.TabBar">
+        <item name="android:background">#CCFFFFFF</item>
+        <item name="android:dividerPadding">0dip</item>
+        <item name="android:showDividers">none</item>
+    </style>
+    <style name="WhiteTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFF</item>
+    </style>
+</resources>

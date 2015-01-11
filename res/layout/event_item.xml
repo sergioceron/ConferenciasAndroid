@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:columnCount="10" android:rowCount="3" android:minHeight="66sp"
+            android:orientation="horizontal">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="day"
+            android:id="@+id/day"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp" android:layout_marginLeft="5dp" android:textColor="#000"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_column="2"
+            android:layout_weight="1" android:layout_marginLeft="5dp">
+        <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:paddingLeft="5dp" android:text="title" android:textColor="#000"
+
+                android:layout_marginTop="5dp" android:layout_marginBottom="3dp" android:ellipsize="end"
+                android:scrollHorizontally="true" android:singleLine="false" android:maxLines="1"
+                >
+        </TextView>
+        <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:paddingLeft="5dp" android:text="value" android:layout_column="2" android:layout_row="1"
+                android:layout_columnSpan="6" android:layout_rowSpan="2"
+                android:gravity="top" android:layout_gravity="fill_horizontal" android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" android:textColor="#000">
+        </TextView>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:id="@+id/scheduled"
+            android:src="@drawable/event_alarm_unset"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+    <ImageView
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:id="@+id/stared" android:src="@drawable/event_unstared"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp" android:visibility="gone"/>
+</LinearLayout>
